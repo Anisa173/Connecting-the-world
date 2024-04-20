@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="CodeHim">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Request for example</title>
+    <!--Style Css-->
+    <link rel="stylesheet" href="styleCss31.css" type="text/css">
+    <!--Demo Css-->
+    <link rel="stylesheet" href="demoCss31.css" type="text/css">
+
+</head>
+
+<body>
+    <header class="cd_intro">
+        <h1>Appointment Request form example</h1>
+        <p>Appointment Request Form</p>
+        <div class="cd_action">
+            <a href="https://www.codehim.com/html5-css3/simple-appoinment-request-form-html"
+                title="Back to download and tutorial page" class="cd_btn back">Back to Tutorial</a>
+        </div>
+    </header>
+    <main class="cd_main">
+        <!--Start demo html-->
+        <div id="container">
+            <div id="body_header">
+                <h1>Appointment Request Form</h1>
+                <p>Make your appointments more easier</p>
+            </div>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend><span class="number">1</span>Your basic details</legend>
+                    <label for="name">Name* :</label>
+                    <input type="text" id="name" name="name" placeholder="Atchyut (only first names)" required
+                        pattern="[a-zA-Z0-9]+">
+                    <label for="mail">Email* :</label>
+                    <input type="email" id="mail" name="mail" placeholder="abc@xyz.com" required>
+                    <label for="tel">Contact Num* :</label>
+                    <input type="tel" id="tel" name="tel" placeholder="Include country code">
+                    <label for="skype_name">Skype username* :</label>
+                    <input type="email" id="skype_name" name="skype_name" placeholder="@atchyutn"
+                        pattern="[a-zA-Z0-9]+">
+                </fieldset>
+                <fieldset>
+                    <legend><span class="number">2</span>Appointment Details :</legend>
+                    <label for="appointment for">Appointment for* :</label>
+                    <select id="appointment for" name="appointment for" required>
+                        <option value="coffe">Coffe</option>
+                        <option value="meeeting">Meeting</option>
+                        <option value="Business">Business</option>
+                        <option value="lunch">Lunch</option>
+                        <option value="skype">Skype</option>
+                        <option value="movie">Movie</option>
+                        <option value="couple_date">Date</option>
+                    </select>
+                    <label for="appointment_description">Appointment Description :</label>
+                    <textarea id="appointment_description" name="appointment_description"
+                        placeholder="I wish to get an appointment to skype for resolving a software problem."></textarea>
+                    <label for="date">Date* :</label>
+                    <input type="date" name="date" value=" " required></input><br>
+                    <label for="time">Time* :</label>
+                    <input type="time" id="time" name="appointment_description" required></input><br>
+                    <label for="duration">How long?(Minutes)</label>
+                    <input type="radio" id="duration" name="duration" value="30" checked>30</input>
+                    <input type="radio" id="duration" name="duration" value="60" checked>60</input>
+                    <input type="radio" id="duration" name="duration" value="90" checked>90</input>
+                    <input type="radio" id="duration" name="duration" value="120" checked>120</input>
+                    <input type="radio" id="duration" name="duration" value="more" checked>More</input>
+                </fieldset>
+                <button type="submit">Request for Appointment</button>
+
+            </form>
+        </div>
+    </main>
+    <footer class="cd_credit">Author: TIm - Distributed By: <a title="Free web design code & scripts"
+            href="https://www.codehim.com?source=demo-page" target="_blank">Code to him</a>
+    </footer>
+
+</body>
+
+</html>

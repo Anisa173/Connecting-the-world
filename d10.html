@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    /*Style the body. */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+    /* Header/logo Title */
+    .header {
+      padding: 60px;
+      text-align: center;
+      background-color: #5eac9d;
+      color: white;
+    }
+    /*Style the top navigation bar*/
+    .navbar {
+      display: flex;
+      background-color: #333333;
+    }
+    /*Style the navigation bar links*/
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+    }
+    /*Change the color on hover */
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    /*Column container*/
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    /* Create two unequal columns that sits next to each other*/
+    /* Sidebar/left column*/
+    .side {
+      flex: 30%;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+    /*Main column */
+    .main {
+      flex: 70%;
+      background-color: rgb(185, 145, 145);
+      padding: 20px;
+    }
+    /*Fake image , just for this example */
+    .fakeimg {
+      background-color: #aaa;
+      width: 100%;
+      padding: 20px;
+    }
+    /*Footer */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #dddddd;
+    }
+    @media (max-width: 700px) {
+      .row,
+      .navbar {
+        flex-direction: column;
+      }
+    }
+  </style>
+  <body>
+    <!--Noteeee-->
+    <div style="background: yellow; padding: 5px">
+      <h4 style="text-align: center">
+        Resize the browser to see the responsive effect.
+      </h4>
+    </div>
+    <!--Header-->
+    <div class="header">
+      <h1>My website</h1>
+      <p>With a<b>flexible</b> layout.</p>
+    </div>
+    <!--Navigation Bar-->
+    <div class="navbar">
+      <a href="#">Home</a>
+      <a href="#">Home1</a>
+      <a href="#">Home2</a>
+      <a href="#">Home3</a>
+      <a href="#">Home4</a>
+    </div>
+    <!--The flexible grid(content)-->
+    <div class="row">
+      <div class="side">
+        <h2>About Me!</h2>
+        <h5>Photo of me:</h5>
+        <div class="fakeimg" style="height: 200px">Image</div>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere,
+          neque perferendis nesciunt distinctio possimus sapiente tempora atque
+          ex, ullam, quisquam a animi ipsum labore deserunt.
+        </p>
+        <h3>More text</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos
+          repellendus tenetur officiis ab, mollitia neque, accusamus delectus
+          laborum expedita magni natus, nemo labore nobis ad rem cumque.
+          Exercitationem dicta porro animi, placeat, culpa expedita dignissimos
+          dolor ducimus sapiente corrupti sunt!
+        </p>
+        <div class="fakeimg" style="height: 60px">Image</div>
+        <br />
+        <div class="fakeimg" style="height: 60px">Image</div>
+        <br />
+        <div class="fakeimg" style="height: 60px">Image</div>
+      </div>
+      <div class="main">
+        <h2>TITTLE HEADING</h2>
+        <h5>Title description,Dec 7 , 2017</h5>
+        <div class="fakeimg" style="height: 200px">Image</div>
+        <p>Some text...</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+          necessitatibus. Ipsa unde accusamus, qui dicta possimus exercitationem
+          explicabo veniam incidunt omnis accusantium! Excepturi, odit fugiat.
+          Totam debitis placeat omnis magnam voluptatibus, fugit repellendus
+          optio corrupti magni cumque accusamus ut repudiandae, minus et
+          delectus, facere a deleniti?
+        </p>
+        <br />
+        <h2>Title heading</h2>
+        <h5>Title description , Sep 2 , 2017</h5>
+        <div class="fakeimg" style="height: 200px">Image</div>
+        <p>Some text...</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad rem,
+          adipisci quos veritatis perspiciatis alias, deserunt quidem omnis
+          dolores sequi doloremque eum facilis ut. Quis accusamus reprehenderit
+          cum fuga commodi quibusdam impedit saepe, esse nihil hic, error
+          consequuntur.
+        </p>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer"><h2>Footer</h2></div>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      label {
+        padding: 12px;
+      display:inline-block;
+      }
+      input[type="submit"] {
+        background-color: #5c9380;
+        color: azure;
+        padding: 12px 20px;
+        font-family: "Times New Roman", Times, serif;
+        padding:10px;
+        border: none;
+        box-shadow: 3px 2px 2px rgb(71, 88, 71);
+        cursor: pointer;
+       margin: 25px 65px 10px 10px;
+        border-radius: 5px;
+      width:75%;
+    float:auto;  
+    }
+
+      input[type="submit"]:hover {
+        background-color: #24463a;
+        color: rgb(155, 148, 148);font-family:Verdana, Geneva, Tahoma, sans-serif ;
+      }
+      input[type="submit"]:focus {
+        background-color: white;
+        color: black;
+      }
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border-radius: 5px;
+        resize: vertical;
+        border: 2px solid #cccccc;
+      }
+      .container {
+        border-radius: 6px;
+        background-color: #8c968c;
+        padding: 20px;
+        margin:auto;
+      }
+      .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+      }
+      .col-75 {
+        float: left;
+        width: 65%;
+        margin-top: 6px;
+      }
+      /*Clear floats after the columns */
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
+      
+      }
+      @media screen and (max-width: 200px) {
+        .col-25,
+        .col-75,
+        input[type="submit"] {width:100%;padding:20px 8px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Responsive forms!</h2>
+    <p>
+      Resize the browser window to see the effect.When the screen is less than
+      600px wide,make the two columns stack on top of each other instead od the
+      next to each other.
+    </p>
+    <div class="container">
+      <form action="/action_page.php" method="post">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">First Name :</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name is..."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25"><label for="lname">Last Name :</label></div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your lastname is..."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25"><label for="cnt">Country</label></div>
+          <div class="col-75">
+            <select id="cnt" name="country">
+              <option value="#1">Australia</option>
+              <option value="#2">Canada</option>
+              <option value="#1">USA</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25"><label for="message">Subject</label></div>
+          <div class="col-75">
+            <textarea id="message" name="message" style="height: 50%">
+Write smth about yourself...!</textarea
+            >
+          </div>
+        </div>
+        <br />
+        <div class="row"><div class="col-75">
+            <input type="submit" name="Submit" value="Submit" /></div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

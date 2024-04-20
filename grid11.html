@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: 40% 30% 30%;
+        grid-template-rows: 35% 40% 25%;
+        gap: 10px;
+        background-color: #ebf1f5;
+        padding: 10px;
+      }
+
+      .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        background-size: 100%;
+      }
+
+      .item1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Grid Lines</h1>
+
+    <div class="grid-container">
+      <div class="item1">
+        <img
+          style="width: 320px; height: 110px"
+          src="images/132857243_1117123625374862_1520890343561817636_n.jpg"
+          alt=""
+        />
+      </div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+    </div>
+
+    <p>You can refer to line numbers when placing grid items.</p>
+  </body>
+</html>

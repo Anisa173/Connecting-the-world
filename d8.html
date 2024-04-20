@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: gainsboro;
+      }
+      .pagination {
+        display: flex;
+        font-size: 18px;
+      }
+      .pagination a {
+        color: black;
+        float: left;
+        box-shadow: 3px 0px 3px rgb(122, 122, 165);
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        border: 2px solid #dddddd;
+      }
+      .pagination a.active {
+        background-color: #4caf50;
+        color: white;
+        border: 2px solid #b8ebba;
+      }
+      .pagination a:hover:not(.active) {
+        background-color: lavender;
+        color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Next/Previous buttons:</p>
+    <div class="pagination">
+      <a href="#"><</a>
+      <a href="#">></a>
+    </div>
+    <p>Navigation Pagination:</p>
+    <div class="pagination">
+      <a href="#" class="active">Home</a>
+      <a href="#">Link1</a>
+      <a href="#">Link2</a>
+      <a href="#">Link3</a>
+    </div>
+  </body>
+</html>

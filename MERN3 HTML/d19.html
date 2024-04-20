@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul {
+        list-style-type: none;
+
+        margin: 0;
+
+        padding: 0;
+
+        overflow: hidden;
+
+        background-color: #333333;
+      }
+      li {
+        float: left;
+      }
+
+      li a,
+      .dropbtn {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+
+        text-align: center;
+
+        padding: 14px 16px;
+      }
+      li a:hover,
+      .dropdown:hover .dropbtn {
+        background-color: rgb(116, 110, 110);
+      }
+
+      li.dropdown {
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+      }
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #f1f1f1;
+      }
+      .dropdown:hover,
+      .dropdown-content {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">DropDown</a>
+        <a href="#" class=" "
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="15"
+            height="15"
+            fill="#ff5678"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M216,136H136a8,8,0,0,0-8,8v57.45a8,8,0,0,0,6.57,7.88l80,14.54A7.61,7.61,0,0,0,216,224a8,8,0,0,0,8-8V144A8,8,0,0,0,216,136Zm-8,70.41-64-11.63V152h64ZM104,136H40a8,8,0,0,0-8,8v40a8,8,0,0,0,6.57,7.87l64,11.64a8.54,8.54,0,0,0,1.43.13,8,8,0,0,0,8-8V144A8,8,0,0,0,104,136Zm-8,50.05-48-8.73V152H96ZM221.13,33.86a8,8,0,0,0-6.56-1.73l-80,14.55A8,8,0,0,0,128,54.55V112a8,8,0,0,0,8,8h80a8,8,0,0,0,8-8V40A8,8,0,0,0,221.13,33.86ZM208,104H144V61.22l64-11.63ZM109.13,54.22a8,8,0,0,0-6.56-1.73l-64,11.64A8,8,0,0,0,32,72v40a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V60.36A8,8,0,0,0,109.13,54.22ZM96,104H48V78.68L96,70Z"
+            ></path></svg
+        ></a>
+        <div class="dropdown-content">
+          <a href="#">Link1</a>
+          <a href="#">Link2</a>
+          <a href="#">Link3</a>
+        </div>
+      </li>
+    </ul>
+    <h3>Dropdown Menu inside a Navigation Bar</h3>
+    <p>Hover over the "Dropdown" link to see the dropdown menu.</p>
+  </body>
+</html>

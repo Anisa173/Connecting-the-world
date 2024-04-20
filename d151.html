@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --bodybgColor: #969572;
+        --blueEerrët: #093a47;
+      }
+      h1 {
+        color: red;
+        background-color: rgba(255, 0, 0, 0.2);
+      }
+      p {
+        padding: 10px;
+      }
+
+      .navul {
+        list-style-type: none;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        margin: 15px;
+      }
+      .bg {
+        background-color: #0081a7;
+      }
+      .navli {
+        padding: 2px 4px;
+      }
+      .navli > a {
+        background-color: #4fc5ea;
+        text-decoration: none;
+        color: white;
+        padding: 4px 12px;
+      }
+      a:hover {
+        background-color: #2f5d6b;
+      }
+      .fotoframe {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: auto;
+      }
+      .fotoframe > img {
+        width: 100%;
+      }
+      .parentDiv {
+        position: relative;
+      }
+      .childDiv {
+        margin: 200px 0;
+        width: 200px;
+        height: 200px;
+        background-color: #0081a755;
+        border: 2px solid #33333333;
+      }
+      .stickynav {
+        position: sticky;
+        top: 0;
+      }
+      .scrollSpy {
+        width: 50px;
+        height: 50px;
+        background-color: #0081a7;
+        position: fixed;
+        top: 30vh;
+        right: 25px;
+      }
+      .paraparent {
+        width: 100%;
+        height: 90vh;
+        border: 2px solid #333333;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: end;
+      }
+      #one,
+      #two,
+      #three {
+        width: 30%;
+        margin-block-start: 0;
+      }
+      .container {
+        width: 70%;
+        height: 50%;
+        margin: auto;
+      }
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      /*.cards {
+        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+      }*/
+      .card {
+        align-items: center;
+        padding: 10px;
+        width: 50%;
+        background-color: white;
+        height: 70%;
+        border: 1px solid #33333322;
+        border-radius: 5px;
+        transition: all 0.15s ease-in-out;
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.25);
+      }
+      .card:nth-child(odd) {
+        flex-direction: column-reverse;
+      }
+      .card:hover img {
+        scale: 1.1;
+      }
+
+      .card:hover {
+        scale: 1.05;
+        color: #555555;
+        box-shadow: 0px 10px 25px -3px rgba(0, 0, 0, 0.5);
+      }
+      .cardframe {
+        height: 250px;
+        overflow: hidden;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      .cardframe > img {
+        width: 100%;
+      }
+      .cardbody {
+        width: 200px;
+        height: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg">
+      <div class="container">
+        <ul class="navul">
+          <li class="navli"><a class="" href="dropdown1.html">Home</a></li>
+          <li class="navli"><a class="" href="formss1.html">Posts</a></li>
+          <li class="navli"><a class="" href="formss2.html">Contact Us</a></li>
+          <li class="navli"><a class="" href="forma.html">Booking</a></li>
+          <li class="navli" style="text-align: right">
+            <a class="" href="d1.html">About us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--  <div class="parentDiv">
+      <div class="childDiv">1</div>
+      <div class="childDiv" id="pabloPicaso">2</div>
+      <div class="childDiv" id="thirdDiv">3</div>
+      <div class="childDiv" id="vicent">4</div>
+      <div class="childDiv" id="last">last</div>
+    </div>
+    <div class="scrollSpy">
+      <ul>
+        <li><a href="#pabloPicaso">1</a></li>
+        <li><a href="#thirdDiv">2</a></li>
+        <li><a href="#vicent">3</a></li>
+        <li><a href="#last">4</a></li>
+      </ul>
+    </div>-->
+    <div class="container">
+      <div class="cards">
+        <div class="card">
+          <div class="cardframe">
+            <img
+              src="images/131442546_1109966136090611_7264308104153305473_n.jpg"
+              alt=" "
+            />
+          </div>
+          <div class="cardbody">
+            <h3>Special Shoes</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Reprehenderit, perferendis!
+            </p>
+            <a
+              href="https://albest.al/informacion-risi/589-shitje-online/43775-george-alexander-outlet-dyqan-kepucesh-online.html"
+              >See More</a
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cardframe">
+            <img
+              src="images/131922248_1112080402545851_8285927661026681342_n.jpg"
+              alt=""
+            />
+          </div>
+          <div class="cardbody">
+            <h3>Special Shoes</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <a href="https://george-alexander.com/">See more...</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="cardframe">
+            <img
+              src="images/132857243_1117123625374862_1520890343561817636_n.jpg"
+              alt=""
+            />
+          </div>
+          <div class="cardbody">
+            <h3>Special Shoes</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <a href="https://george-alexander.com/">See more...</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="cardframe">
+            <img
+              src="images/131922248_1112080402545851_8285927661026681342_n.jpg"
+              alt=""
+            />
+          </div>
+          <div class="cardbody">
+            <h3>Special Shoes</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <a href="https://george-alexander.com/">See more...</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="cardframe">
+            <img
+              src="images/131922248_1112080402545851_8285927661026681342_n.jpg"
+              alt=""
+            />
+          </div>
+          <div class="cardbody">
+            <h3>Special Shoes</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <a href="https://george-alexander.com/">See more...</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="cardframe">
+            <img
+              src="images/131922248_1112080402545851_8285927661026681342_n.jpg"
+              alt=""
+            />
+          </div>
+          <div class="cardbody">
+            <h3>Special Shoes</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <a href="https://george-alexander.com/">See more...</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="cardframe">
+            <img
+              src="images/131922248_1112080402545851_8285927661026681342_n.jpg"
+              alt=""
+            />
+          </div>
+          <div class="cardbody">
+            <h3>Special Shoes</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <a href="https://george-alexander.com/">See more...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Code injected by live-server -->
+  </body>
+</html>

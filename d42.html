@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A script</title>
+
+</head>
+
+<body>
+    <script type="text/javascript">
+        var a = new Array(100);
+        for (var i = 0; i < a.length; i++) {
+            a[i] = 2 * i;
+        }
+        function butonKerkoShtyp() {
+            var nrCeles = kerkoForm.jepVlere.value;
+            var element = kerkimLinear(a, parseInt(nrCeles));
+            if (element != -1) {
+                kerkoForm.resultati.value = "Vlera u gjet ne pozicionin" + element;
+            }
+            else { kerkoForm.resultati.value = "Vlera nuk u gjet!"; }
+        }
+
+        function kerkimLinear(vektori, celesi) {
+            for (var j = 0; j < vektori.length; j++) {
+                if (vektori[j] == celesi) {
+                    return j;
+                }
+                else { return -1; }
+            }
+        }
+    </script>
+    <form name="kerkoForm" action=" ">
+        <label for="jepVlere">Shkruani numrin te cilin po kerkoni:<br>
+            <input type="number" id="jepVlere" name="jepVlere"></label>
+        <input name="search" type="button" value="kerko" onclick="butonKerkoShtyp()">
+        <label for="rs">Rezultati:<br>
+            <input type="number" size="30" id="rs" name="rs">
+
+
+
+
+        </label>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+      .about-section {
+        padding: 50px;
+        text-align: center;
+        background-color: #474e5d;
+        color: white;
+      }
+      .column {
+        float: left;
+        width: 33%;
+        margin-bottom: 16px;
+        padding: 0px 8px;
+      }
+      .container::after .row::after {
+        content: " ";
+        clear: both;
+        display: table;
+      }
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 15px;
+        padding: 10px;
+      }
+      .container {
+        padding: 0 16px;
+      }
+      .title {
+        color: grey;
+      }
+
+      .button {
+        border: none;
+        outline: none;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 15px;
+      }
+      .button:hover {
+        background-color: #120202;
+        box-shadow: 4px 6px 3px rgb(58, 53, 53);
+        scale: 1.01;
+        color: rgb(234, 217, 217);
+        font-size: 22px;
+        font-family: "Times New Roman", Times, serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="about-section">
+      <h1>About us Page</h1>
+      <p>Some text about who are and what we do.</p>
+      <p>
+        Resize the browser window to see that this page is responsive by the
+        way.
+      </p>
+    </div>
+    <h2 style="text-align: center">Our Team</h2>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img
+            src="images/1095042_4671549601698_26845888_n.jpg"
+            alt=""
+            style="width: 100%"
+          />
+
+          <div class="container">
+            <h2>Jane Doe</h2>
+            <p class="title">CEO & Founder</p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos iusto.
+            </p>
+            <p>Jane@example.com</p>
+            <p><button class="button">Contact Me</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img
+            src="images/1381398_4988270119513_2011070791_n.jpg"
+            alt=""
+            style="width: 100%"
+          />
+          <div class="container">
+            <h2>Mike Ross</h2>
+            <p class="title">Art Director</p>
+            <p>mike@example.com</p>
+            <p>
+              <i
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                nisi iste doloremque quidem sit explicabo.</i
+              >
+            </p>
+            <p><button class="button">Contact Me</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img
+            src="images/251765_1647542483410_3412445_n.jpg"
+            alt=""
+            style="width: 100%"
+          />
+          <div class="container">
+            <h2>John Doe</h2>
+            <p class="title">Designer</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
+              soluta fugiat unde officiis aliquid sed, impedit asperiores maxime
+              eligendi incidunt.
+            </p>
+            <p>john@example.com</p>
+            <p><button class="button">Contact Me</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section>
+      <h2><b>Quotes</b></h2>
+      <p class="card">
+        <em
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt rem
+          illo ab veritatis. Temporibus earum magni facere laboriosam? Quas
+          itaque doloribus reiciendis, suscipit deserunt eius qui quia mollitia
+          amet debitis ipsum error temporibus aut velit, delectus consectetur
+          cupiditate neque corrupti, sequi nulla incidunt porro. Ratione rerum
+          possimus enim asperiores rem?</em
+        >
+      </p>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(146, 92, 92);
+      }
+      li {
+        float: left;
+      }
+      li a,
+      .dropbtn {
+        display: inline-block;
+        color: rgb(35, 35, 46);
+        font-size: 20px;
+        text-align: center;
+        padding: 10px 20px;
+        text-decoration: none;
+      }
+      .active {
+        background-color: gray;
+        color: white;
+      }
+      li a:hover,
+      .dropdown:hover .dropbtn {
+        background-color: rgb(25, 22, 18);
+        color: white;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: lightblue;
+        min-width: 160px;
+        box-shadow: 5px 8px 15px 0px black;
+      }
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      .dropdown-content a:hover {
+        background-color: gray;
+        color: white;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      h1,
+      h2,
+      h3 {
+        text-align: center;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#2">Contact us</a></li>
+      <li><a href="#3">News</a></li>
+      <li><a href="#4">About Us</a></li>
+      <li class="dropdown">
+        <a href="#5" class="dropbtn">Web Designing</a>
+        <div class="dropdown-content">
+          <a href="#12">HTML</a><a href="#13">Java</a
+          ><a href="#14">JavaScript</a><a href="#15">BootStrap Css</a>
+        </div>
+      </li>
+    </ul>
+    <h1>Welcome to JavaTpoint!</h1>
+    <h2>Example of a dropdown Menu inside a navigation Bar</h2>
+    <h3>Move the cursor on the web-designing to see the dropdown effect</h3>
+  </body>
+</html>

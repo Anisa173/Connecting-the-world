@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      ul.sidenav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 25%;
+        background-color: #f1f1f1;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+      }
+      ul.sidenav li a {
+        display: flex;
+        color: #000000;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+      ul.sidenav li a.active {
+        background-color: #065009;
+        color: rgb(244, 237, 237);
+      }
+      ul.sidenav li a:hover:not(.active) {
+        background-color: #859f64;
+        color: white;
+      }
+
+      div.content {
+        margin-top: 10px;
+        margin-left: 25%;
+        padding: 1px 16px;
+        height: 1000px;
+      }
+      @media screen and (max-width: 900px) {
+        ul.sidenav {
+          height: auto;
+          width: 100%;
+          position: relative;
+        }
+
+        ul.sidenav li a {
+          float: left;
+          padding: 15px;
+        }
+        div.content {
+          display: block;
+          margin: 0px;
+        }
+      }
+      @media screen and (max-width: 400px) {
+        ul.sidenav li a {
+          float: none;
+          text-align: center;
+          position: fixed;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="sidenav">
+      <li><a class="active" href="#Home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <div class="content">
+      <h2>Responsive Sidenav Example</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+        asperiores? Nesciunt consequatur deserunt voluptas obcaecati, vero
+        aperiam facere iure. Iusto blanditiis minima ad velit dolorum molestias?
+        Officiis, omnis voluptatibus.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, omnis ex
+        voluptatem consectetur harum nostrum sapiente mollitia ratione? Quis
+        facilis ipsam sequi obcaecati fugiat placeat veritatis voluptatum optio
+        sit libero harum, ipsum nesciunt eum, pariatur temporibus suscipit,
+        provident repudiandae amet?
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae
+        reiciendis dolores porro praesentium sunt aspernatur fuga, illum odit
+        assumenda aut laboriosam asperiores nisi libero ratione.
+      </p>
+      <h3>Resize the browser to see the effect!</h3>
+    </div>
+  </body>
+</html>

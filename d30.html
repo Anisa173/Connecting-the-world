@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,700">
+    <style>
+        body {
+            background-color: #e35869;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .login-form {
+            background: #ffffff;
+            width: 500px;
+            margin: 125px auto;
+            display: flex;
+            flex-direction: column;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+
+            box-shadow: 5px 2px -25px rgba(15, 14, 14, 0.2);
+        }
+
+        .login-form h1 {
+            padding: 35px;
+        }
+
+        .login-form .content {
+            padding: 35px;
+            text-align: center;
+        }
+
+        .login-form .input-field {
+            padding: 12px 15px;
+        }
+
+        .login-form .input-field input[type="email"],
+        input[type="password"] {
+            font-size: 16px;
+            display: block;
+            font-family: 'Rubik', sans-serif;
+            width: 100%;
+            padding: 10px 1px;
+            border-bottom: 1px solid #747474;
+            outline: none;
+            transition: all 0.2s;
+
+        }
+
+        .login-form .input-field input[type="email"]::placeholder,
+        input[type="password"]::placeholder {
+            text-transform: lowercase;
+        }
+
+        .login-form .input-field input[type="email"]:focus,
+        input[type="password"]:focus {
+            border-color: #222;
+        }
+
+        .login-form a.link {
+            text-decoration: none;
+            color: #747474;
+            letter-spacing: 0.2px;
+            text-transform: capitalize;
+            display: inline-block;
+            margin-top: 40px;
+
+        }
+
+        .login-form .action {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .login-form .action button {
+            width: 100%;
+            border: none;
+            padding: 18px;
+            font-family: 'Rubik', sans-serif;
+            cursor: pointer;
+            text-transform: uppercase;
+            background: #e8e9ec;
+            color: #777;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0;
+            letter-spacing: 0.2px;
+            outline: 0;
+            transition: all .3s;
+
+        }
+
+        .login-form .action button:hover {
+            background: #843a3a;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-form">
+        <form>
+            <h1>Login</h1>
+            <div class="content">
+                <div class="input-field">
+                    <input type="email" placeholder="email" autocomplete="nope" required>
+                </div>
+                <div class="input-field">
+                    <input type="password" placeholder="password" autocomplete="new-password" required>
+                </div>
+                <a href="#" class="link">Forgot password?</a>
+
+            </div>
+            <div class="action">
+                <button>Register</button>
+                <button>Sign In</button>
+            </div>
+        </form>
+
+    </div>
+
+</body>
+
+</html>

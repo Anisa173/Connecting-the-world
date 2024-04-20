@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+          .flex-container {
+            width: 100%;
+            background-color: #f1f1f1;
+            height: 100%;
+            display: flex;
+          }
+          div {
+            background-color: DodgerBlue;
+            color: white;
+            width: 70px;
+            margin: 10px;
+            text-align: center;
+            padding: 10px;
+            height: 50px;
+            font-size: 30px;
+          }
+          .flex-container,
+          .flex11 > div {
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+          }
+          .flex-container, .flex12 > div {
+            display: flex;
+
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: flex-start;
+          }
+        </style>
+      </head>
+      <body>
+        <h1>The align-self Property</h1>
+
+        <div class="flex-container flex11">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+          <div>10</div>
+          <div>11</div>
+          <div>12</div>
+          <div>13</div>
+          <div>14</div>
+          <div>15</div>
+          <div>16</div>
+          <div>17</div></div>
+
+          <div class="flex-container flex12">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+
+            <div>13</div>
+            <div>14</div>
+            <div>15</div>
+            <div>16</div>
+            <div>17</div>
+          </div>
+        </div>
+
+        <p>
+          The align-self property overrides the align-items property of the
+          container.
+        </p>
+      </body>
+    </html>
+  </head>
+</html>

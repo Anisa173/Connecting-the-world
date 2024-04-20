@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?familz=Roboto&display=swap");
+/*@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")*/
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  background: #eee;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+.cd_intro {
+  padding: 60px 30px;
+  margin-bottom: 15px;
+  flex-direction: column;
+}
+
+.cd_action {
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+}
+.cd_action a.cd_btn {
+  text-decoration: none;
+  color: #666;
+  border: 2px solid #666;
+  padding: 10px 15px;
+  display: inline-block;
+  margin-left: 5px;
+}
+.cd_action a.cb_btn:hover {
+  background-color: #423b7f;
+  color: #fff;
+  transition: 0.3s;
+  border: 2px solid rgb(38, 37, 37);
+  box-shadow: 2px 3px 4px black;
+}
+.cd_action .cd_btn::before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+.cd_intro h1 {
+  font-size: 18pt;
+  padding: 10px;
+}
+.cd_intro p {
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+}
+.cd_main {
+  width: 100%;
+  display: flex;
+  background: #fff;
+  padding: 25px 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cd_intro,
+.cd_credit {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  color: #333;
+  text-align: center;
+}
+
+.cd_credit {
+  padding: 12px;
+  font-size: 9pt;
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+.cd_credit a {
+  color: #244346;
+  text-decoration: none;
+  visibility: visible;
+  padding: 5px;
+  text-shadow: 2px 1px 1px rgb(10, 10, 71);
+  font-size: medium;
+  font-style: oblique;
+  font-weight: bold;
+}
+.cd_credit a:hover {
+  color: #1dbf73;
+}
+
+.cd_action .cd_btn::before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+.cd_credit a:hover::after {
+  font-family: FontAwesome;
+  content: " ";
+  font-size: 9pt;
+  position: absolute;
+  margin: 3px;
+}
+@media only screen and (min-width: 1360px) {
+  .cd_main {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+  }
+}

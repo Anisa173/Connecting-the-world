@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+  box-sizing: inherit;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  background: #eee;
+}
+
+.cd_intro {
+  padding: 60px 30px;
+  margin-bottom: 15px;
+  flex-direction: column;
+}
+.cd_intro,
+.cd_credit {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  color: #333;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.cd_intro h1 {
+  font-size: 18pt;
+  padding-bottom: 15px;
+}
+.cd_intro p {
+  font-size: 14px;
+}
+.cd_action {
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+}
+.cd_action a.cd_btn {
+  text-decoration: none;
+  color: #666;
+  border: 2px solid #666;
+  padding: 10px 15px;
+
+  margin-left: 5px;
+  cursor: pointer;
+}
+.cd_action a.cd_btn:hover {
+  background: #666;
+  color: #fff;
+  transition: 0.3s;
+}
+.cd_action .cd_btn:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+.cd_main {
+  padding: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+.cart-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  font-family: "Monteserrat", sans-serif;
+  font-weight: 700;
+  transition: background-color 0.2s;
+  margin-top: 40px;
+}
+.cart-btn:hover {
+  background-color: hsl(156, 37%, 64%);
+  cursor: pointer;
+  color: white;
+}
+.cart-btn > svg {
+  margin-left: -8px;
+}
+
+#btn-text {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 15px;
+}
+.cd_credit {
+  padding: 20px;
+  font-family: "Verdana", sans-serif;
+  font-size: 9pt;
+}
+.cd_credit a {
+  color: #333;
+  text-decoration: none;
+}
+.cd_credit a:hover {
+  color: #1dbf73;
+  text-decoration: underline;
+}
+.cd_credit a:hover:after {
+  font-family: FontAwesome;
+  content: " ";
+  font-size: 9pt;
+  position: absolute;
+  margin: 3px;
+}
+@media only screen and (min-width: 1360px) {
+  .cd_main {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+  }
+}

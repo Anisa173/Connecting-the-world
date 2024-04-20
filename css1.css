@@ -1,0 +1,23 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: rgb(221, 212, 212);
+}
+.d1 div {
+  padding: 25px;
+  margin: 10px;
+  border: 2px solid blue;
+  box-shadow: 3px 4px 3px blueviolet;
+}
+
+h2 {
+  text-decoration: underline;
+}
+h2:hover {
+  color: aquamarine;
+}
+#div1 {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}

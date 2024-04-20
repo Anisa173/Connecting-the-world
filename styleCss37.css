@@ -1,0 +1,853 @@
+:root {
+  --nav1: rgb(56, 215, 247);
+  --navbar: rgb(255, 255, 255);
+  --nav2: rgb(100, 100, 100);
+  --active: rgb(54, 111, 131);
+  --searchicon: rgb(166, 214, 252);
+  --buttonLeft: rgb(20, 112, 224);
+  --buttonRight: rgb(254, 255, 251);
+  --paragraph: rgb(130, 130, 130);
+  --kuadranti: rgb(11, 117, 175);
+  --hrLine: rgb(47, 160, 202);
+  --cardColor: rgb(35, 35, 35);
+  --cardBorder: rgb(64, 64, 64);
+  --link: rgb(61, 165, 200);
+  --cardHover: rgb(12, 113, 195);
+  --coverImg: rgb(26, 167, 221);
+  --formësi: rgb(254, 254, 254);
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Merriweather", sans-serif;
+  background-color: white;
+  max-height: 800px;
+  overflow: visible;
+}
+.primary {
+  line-height: 0.2;
+  background-color: var(--navbar);
+  position: sticky;
+}
+.conteiner {
+  display: flex;
+  justify-content: center;
+}
+.logoframe > img {
+  position: relative;
+  width: 40%;
+  height: 70%;
+  margin-left: 190px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  float: left;
+}
+img {
+  width: 125px;
+  height: 60px;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 5px;
+}
+.conteiner .secondary {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: var(--navbar);
+  width: 65%;
+  height: 100%;
+  text-transform: uppercase;
+  padding: 5px;
+  float: right;
+}
+
+.navul1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  position: relative;
+  height: 10%;
+  width: 55%;
+  margin-top: 16px;
+  margin-right: 185px;
+  top: 6px;
+  float: right;
+  list-style-type: none;
+}
+.navul2 {
+  height: 20%;
+  width: 100%;
+  position: relative;
+  color: var(--nav2);
+  list-style-type: none;
+  display: flex;
+  margin-right: 190px;
+  margin-top: 10px;
+  bottom: -7px;
+  flex-direction: row;
+  float: right;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+ul.navul1 li a {
+  text-decoration: none;
+  color: var(--nav1);
+  padding: 0px 10px;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+ul.navul2 li a {
+  text-decoration: none;
+  color: var(--nav2);
+  padding: 15px 7px 0px 10px;
+  font-size: 11px;
+  text-align: center;
+}
+.navul2 li a:hover {
+  text-decoration: underline;
+  color: var(--active);
+  font-weight: bold;
+}
+.navul2 li svg.active {
+  fill: var(--active);
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  bottom: 10px;
+}
+
+.content {
+  background-image: url("images/—Pngtree—exploring the world of iot_8301355.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 1000px;
+  margin: 0;
+}
+.content .content1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.content .content1 h1 {
+  color: white;
+  font-family: "Merriweather", sans-serif;
+  font-size: 65px;
+  text-align: center;
+  text-shadow: 2px 3px 2px grey;
+  margin-bottom: 115px;
+  margin-top: 115px;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+}
+
+.content .content1 h3 {
+  color: white;
+  font-family: "Merriweather", sans-serif;
+  font-size: 35px;
+  letter-spacing: 0.5rem;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: 1px 2px 2px rgb(176, 215, 238);
+  margin-bottom: -90px;
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.formbg {
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 69%,
+    93% 78%,
+    80% 88%,
+    66% 94%,
+    50% 96%,
+    35% 95%,
+    20% 88%,
+    9% 79%,
+    0 69%
+  );
+}
+
+.left {
+  float: left;
+  padding: 10px;
+  margin-left: 40%;
+  margin-top: -5%;
+  background-color: var(--buttonLeft);
+  display: grid;
+  grid-template-columns: 2fr;
+  column-gap: 5px;
+  width: 135px;
+  text-align: center;
+  height: 47px;
+  position: sticky;
+  margin-top: -20px;
+  color: white;
+  border-radius: 25px;
+  border: 1px solid white;
+  font-family: "Tahoma", sans-serif;
+  text-decoration: none;
+}
+.right {
+  color: black;
+  float: right;
+  padding: 10px;
+  margin-right: 40%;
+  margin-top: -5%;
+  background-color: var(--buttonRight);
+  display: grid;
+  grid-template-columns: 2fr;
+  column-gap: 5px;
+  width: 135px;
+  text-align: center;
+  height: 47px;
+  position: sticky;
+  margin-top: -20px;
+
+  border-radius: 25px;
+  border: 1px solid white;
+  font-family: "Tahoma", sans-serif;
+  text-decoration: none;
+}
+.content > .button a#formbg1 svg {
+  z-index: 2;
+  bottom: 200px;
+  border-radius: 100%;
+  padding: 10px;
+  background-color: rgb(12, 48, 60);
+  opacity: 0.6;
+  fill: rgb(15, 4, 67);
+  position: sticky;
+  margin-left: 750px;
+  margin-top: 350px;
+  fill: white;
+  width: 70px;
+  height: 120px;
+  border: 1px solid rgb(109, 106, 106);
+  box-shadow: 2px 2px 4px 3px grey;
+}
+.content > .button a#formbg1:hover svg:hover {
+  padding: 15px;
+  opacity: 0.6;
+  fill: rgb(248, 248, 250);
+  box-shadow: 3px 2px 4px 4px rgb(252, 250, 250);
+  border: none;
+}
+.cd_intro {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+}
+div.section1 {
+  padding: 10px;
+  width: 44%;
+  float: left;
+  margin-right: 10px;
+  margin-left: 200px;
+  margin-bottom: 100px;
+}
+.cd_intro .section1 h3 {
+  text-align: left;
+  color: rgb(75, 137, 178);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.cd_intro .section1 h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 27.7px;
+  line-height: 44px;
+}
+
+.cd_intro .section1 p {
+  color: var(--paragraph);
+  letter-spacing: 0.5px;
+  line-height: 2;
+  margin-block-end: 2em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-transform: none;
+}
+
+.cd_intro .section1 a.button1 {
+  background-color: rgb(28, 167, 224);
+  padding: 18px 25px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: rgb(242, 255, 255);
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.cd_intro .section1 div {
+  display: block;
+}
+.cd_intro .section2 {
+  padding: 10px;
+  width: 40%;
+  height: 20px;
+}
+.section2 .section22 img {
+  padding-top: 20px;
+  width: 100%;
+  height: 360px;
+  padding-left: 50px;
+}
+.section2 .section2_2 img {
+  z-index: 2;
+  position: absolute;
+  top: 1170px;
+  left: 700px;
+  width: 27%;
+  height: 350px;
+  padding-left: 35px;
+}
+img {
+  padding-top: 10px;
+
+  padding-right: 5px;
+}
+.cd_intro .section2 .section222 {
+  z-index: 2;
+  position: absolute;
+  border: 8px solid var(--kuadranti);
+  width: 20%;
+  height: 300px;
+  top: 165%;
+  left: 55%;
+}
+.cd_intro .section3 {
+  width: 15%;
+  margin-top: 200px;
+  margin-left: 100px;
+  float: right;
+}
+
+.cd_intro .section3 div {
+  left: 100px;
+}
+.cd_intro .section3 ul li:nth-child(3) {
+  list-style-type: none;
+}
+.cd_intro .section3 ul li {
+  color: rgb(110, 107, 107);
+  font-size: x-large;
+}
+.section3 label {
+  color: rgb(110, 107, 107);
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.section3 input:nth-child(3) {
+  margin-right: 20px;
+}
+.section3 li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+.one {
+  background: rgb(31, 31, 31);
+  width: 100%;
+  text-align: center;
+  height: 1000px;
+}
+.one1 h1 {
+  padding-top: 70px;
+  color: white;
+  text-transform: uppercase;
+}
+.one1 p {
+  color: white;
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+.one1 hr {
+  width: 70px;
+  border: 2px solid var(--hrLine);
+}
+.container {
+  margin: 35px 200px;
+  display: flex;
+  line-height: 3;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.card {
+  width: 290px;
+  height: 290px;
+  margin: 10px;
+  background-color: var(--cardColor);
+  border: 2px solid var(--cardBorder);
+}
+.card svg {
+  fill: white;
+  margin-top: 20px;
+}
+.card img {
+  fill: white;
+  margin-top: 5px;
+  width: 120px;
+  height: 80px;
+  margin-bottom: -25px;
+}
+.card hr {
+  width: 50px;
+  justify-content: center;
+  border: 1px solid whitesmoke;
+}
+.card h1 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 15px;
+}
+.card p {
+  line-height: normal;
+  color: antiquewhite;
+  font-size: 13px;
+  padding-right: 12px;
+  padding-left: 12px;
+  line-height: 1.4;
+  margin-top: 7px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.card a {
+  color: var(--link);
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+.card:hover {
+  background-color: var(--cardHover);
+  cursor: pointer;
+  box-shadow: 0px 2px 3px 6px rgb(48, 47, 47);
+}
+.content11 {
+  background: rgb(255, 255, 255);
+  width: 100%;
+  text-align: center;
+}
+.content11 .two h1 {
+  text-transform: uppercase;
+  margin-top: 85px;
+  margin-bottom: 20px;
+}
+.content11 .two hr {
+  width: 65px;
+  border: 1.7px solid rgb(49, 159, 184);
+}
+.two p {
+  color: rgb(103, 103, 103);
+  font-size: 15px;
+  line-height: 1.7;
+  top: 20px;
+}
+.headsection {
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 160px;
+  margin-right: 160px;
+  margin-bottom: 90px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.two1 {
+  width: 190px;
+  height: 170px;
+  background-color: rgb(245, 246, 250);
+  border: 7px solid rgb(252, 251, 251);
+  outline-width: 2px;
+  outline-color: rgb(73, 84, 116);
+  outline-style: solid;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.two1 h1 {
+  color: rgb(52, 165, 209);
+  font-size: 29px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 12px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.two1 h5 {
+  text-transform: uppercase;
+  color: rgb(40, 41, 43);
+  margin-bottom: 12px;
+}
+.two1 p {
+  color: rgb(94, 95, 99);
+  font-size: 13px;
+  margin-right: 6px;
+  margin-left: 6px;
+  line-height: 1.5;
+}
+.forms {
+  background-color: rgb(246, 246, 246);
+  width: 100%;
+  height: 700px;
+}
+.forms .frame {
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  margin-top: 75px;
+  margin-left: 220px;
+  margin-right: 350px;
+  margin-bottom: -400px;
+}
+
+.foto1 img {
+  width: 450px;
+  height: 400px;
+}
+.frame1 .foto2 {
+  width: 450px;
+  height: 392px;
+  background-color: var(--coverImg);
+  bottom: 470px;
+  left: -205px;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  margin-top: 75px;
+  margin-left: 220px;
+  margin-right: 350px;
+  margin-bottom: 100px;
+  opacity: 0.9;
+}
+.foto2 h1 {
+  text-transform: uppercase;
+  color: rgb(251, 255, 249);
+  padding-top: 120px;
+  padding-left: 70px;
+  font-size: 26pt;
+  font-weight: bolder;
+  padding-bottom: 5px;
+}
+.foto2 hr {
+  width: 40px;
+  float: left;
+  margin-left: 70px;
+  margin-top: -25px;
+  border: 2px solid rgb(236, 255, 255);
+}
+.foto2 p {
+  margin-left: 70px;
+  margin-right: 140px;
+  color: rgb(181, 255, 255);
+  line-height: 1.7;
+  font-size: 12.5px;
+}
+.formesi {
+  background-color: rgb(254, 254, 254);
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0 4px 25px 0 rgba(94, 92, 92, 0.2),
+    0 6px 20px 0 rgba(204, 202, 202, 0.19);
+  width: 620px;
+  height: 475px;
+  left: 800px;
+  bottom: 800px;
+  top: -100px;
+  left: 0px;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  margin-top: 155px;
+  margin-left: 380px;
+  margin-right: 150px;
+  margin-bottom: 10px;
+}
+.formesi h1 {
+  text-transform: uppercase;
+  padding-left: 46px;
+  padding-top: 56px;
+  font-size: 26pt;
+  font-weight: 1000;
+  margin-block-start: 0 em;
+  margin-block-end: 0 em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.formbg1 {
+  display: block;
+}
+.formbg1 label {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+}
+.formbg1 #left {
+  margin-left: 44px;
+}
+.formbg1 #right {
+  margin-left: 60px;
+  margin-right: 210px;
+  margin-top: 5px;
+  float: right;
+}
+.formbg1 input.leftt {
+  float: left;
+}
+.formbgi input.rightt {
+  float: right;
+}
+
+.formbg1 input {
+  border-bottom: 1px solid rgb(216, 216, 216);
+  border-top: none;
+  border-left: none;
+  flex: 50%;
+  border-right: none;
+  padding-left: 20px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-left: 45px;
+  margin-right: 30px;
+  margin-bottom: 25px;
+}
+.formbg1 input placeholder {
+  text-align: left;
+  font-size: 10px;
+
+  color: rgb(196, 196, 196);
+}
+.formabg1 textarea.msg {
+  float: left;
+}
+
+textarea.msg {
+  border-bottom: 1px solid rgb(216, 216, 216);
+  border-top: none;
+  width: 70%;
+  border-left: none;
+  border-right: none;
+  margin-left: 48px;
+  margin-right: 0px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+textarea.msg placeholder {
+  text-align: left;
+  font-size: 10px;
+
+  color: rgb(196, 196, 196);
+}
+button.msg {
+  border-radius: 100%;
+  background-color: rgb(32, 165, 224);
+  border: none;
+  bottom: 160px;
+  margin-right: 30px;
+  float: right;
+  width: 70px;
+  height: 70px;
+  box-shadow: 0 4px 25px 0 rgba(54, 53, 53, 0.2),
+    0 6px 20px 0 rgba(94, 92, 92, 0.19);
+}
+button.msg svg {
+  fill: white;
+  position: relative;
+}
+button:hover {
+  opacity: 0.6;
+  box-shadow: 0 2px 3px 5px rgba(51, 49, 49, 0.2);
+
+  cursor: pointer;
+}
+.backgrofooter {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(15, 15, 15);
+  width: 100%;
+  height: 670px;
+}
+.backgrofooter h3 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 100px;
+  font-size: 16pt;
+
+  color: rgb(255, 255, 255);
+}
+.backgrofooter p {
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: rgb(140, 140, 140);
+}
+.backgrofooter .subscribeForm {
+  display: flex;
+  flex-direction: row;
+  width: 37%;
+  height: 47px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+}
+.subscribeForm input placeholder {
+  color: rgb(162, 162, 162);
+}
+.subscribeForm input[type="email"] {
+  width: 70%;
+  border-radius: 15px;
+  border: 1px solid rgb(248, 247, 247);
+
+  padding: 5px 5px 5px 0px;
+}
+.subscribeForm input[type="email"]:focus {
+  cursor: pointer;
+  border: 1px solid black;
+}
+.subscribeForm label svg {
+  fill: rgb(162, 162, 162);
+  margin-top: 11px;
+  margin-left: 25px;
+}
+.subscribeForm button.sgb {
+  border-radius: 100%;
+  background-color: rgb(32, 165, 224);
+  border: none;
+  margin-left: 78px;
+  margin-top: 2px;
+  float: right;
+  width: 42px;
+  height: 42px;
+  box-shadow: 0 4px 25px 0 rgba(54, 53, 53, 0.2),
+    0 6px 20px 0 rgba(94, 92, 92, 0.19);
+}
+.subscribeForm button.sgb svg {
+  fill: rgb(243, 249, 255);
+}
+.subcList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.subcList hr {
+  width: 1000px;
+  border: 0.5px solid rgb(28, 25, 25);
+  margin-top: 25px;
+}
+.cardListat {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.cardListat .cardL {
+  width: 190px;
+  height: 250px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 1px solid rgb(15, 15, 15);
+}
+.cardL h4 {
+  text-align: left;
+  margin-top: 10px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+.cardL hr {
+  border: 1px solid rgb(57, 99, 147);
+  width: 40px;
+  margin-left: 3px;
+  margin-top: -10px;
+}
+.cardL ul li {
+  list-style-type: none;
+  color: rgb(117, 117, 117);
+  font-size: 13px;
+  line-height: 2.5;
+  letter-spacing: 1px;
+}
+.cardL ul {
+  display: block;
+  list-style-type: none;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 5px;
+}
+.cardL ul li a {
+  text-decoration: none;
+  color: rgb(117, 117, 117);
+}
+.cardL ul li a:hover {
+  text-decoration: underline;
+}
+.footer1 {
+}
+.footer1 .copyrg {
+  flex-direction: row;
+  display: flex;
+  float: left;
+  margin-right: 510px;
+  margin-top: -3px;
+}
+.footer1 .copyrg svg {
+  fill: rgb(255, 255, 255);
+}
+.footer1 .copyrg h5 {
+  color: white;
+  font-weight: 100;
+}
+.footer1 .socialmedia {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  margin-top: 20px;
+}
+.footer1 .socialmedia svg {
+  fill: white;
+}
+.footer1 .socialmedia img {
+  width: 30px;
+  margin-bottom: 40px;
+  height: 30px;
+  background-color: white;
+}
+/*.footerellipse {
+  top: 300px;
+  clip-path: polygon(
+    47% 2%,
+    60% 2%,
+    72% 5%,
+    83% 11%,
+    93% 20%,
+    100% 29%,
+    0 26%,
+    10% 17%,
+    20% 11%,
+    34% 5%
+  );*/

@@ -1,0 +1,79 @@
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+}
+.cd_main {
+  position: relative;
+  display: block;
+  min-height: 720px;
+  background: linear-gradient(to right, #a8ff78, #78ffd6) !important;
+}
+.container {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  width: 600px;
+  height: 550px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 2px 3px 5px -35px rgb(79, 74, 74);
+}
+.left-side {
+  background-image: url("https://i.ibb.co/xzq5YWH/image-product-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.right-side {
+  margin: 32px;
+  height: 350px;
+}
+#perfume {
+  font-size: 12px;
+  letter-spacing: 5px;
+  color: hsl(228, 12%, 48%);
+}
+#header {
+  font-family: "Fraunces", serif;
+  line-height: 1;
+  color: hsl(212, 21%, 14%);
+  margin: 25px auto;
+}
+#description {
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.8;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+.price {
+  margin-bottom: -8px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#number-discount {
+  color: hsl(158, 36%, 37%);
+  font-family: "Franceus", sans-serif;
+  margin-right: 10px;
+}
+#number-full {
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+#parfume {
+  margin-top: 5px;
+  margin-bottom: -10px;
+}
+#description {
+  margin-top: -8px;
+  margin-bottom: -1px;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input[type="submit"] {
+        width: 120px;
+        height: 40px;
+        text-align: center;
+        font-size: 18px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        padding: 5px 10px 5px 10px;
+        margin-top: 35px;
+        margin-bottom: 20px;
+        background-color: rgb(8, 8, 64);
+        color: rgb(144, 130, 103);
+        border: 2px solid black;
+        box-shadow: 3px 4px 4px rgb(124, 121, 121);
+        border-radius: 15px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: rgb(195, 195, 225);
+        color: rgb(48, 42, 42);
+      }
+      input[type="text"] {
+        background-color: rgb(242, 227, 227);
+        width: 50%;
+        height: 30px;
+        border-radius: 10px;
+        border: 2px solid rgb(27, 25, 25);
+      }
+      input[type="text"]:hover {
+        background-color: rgb(164, 158, 158);
+        border: 4px groove rgb(171, 120, 218);
+        box-shadow: 3px 2px 3px rgb(60, 40, 79);
+      }
+
+      input[type="text"]:focus {
+        width: 80%;
+        background-color: rgba(171, 172, 158, 0.248);
+        color: rgb(37, 35, 38);
+        border: 3px outset black;
+      }
+      fieldset {
+        background-color: rgb(229, 236, 245);
+        border-radius: 25px;
+        border: 1px ridge rgb(252, 248, 248);
+        width: 70%;
+        height: 90%;
+        margin-top: 20px;
+        display: block;
+      }
+      fieldset:hover {
+        box-shadow: 2px 0px 40px 20px rgb(240, 236, 236);
+        background-color: rgb(172, 190, 213);
+      }
+      select {
+        width: 120px;
+        height: 15px;
+        border: 2px solid rgb(216, 209, 209);
+        padding: 12px;
+        margin: 8px 0px;
+        display: inline-block;
+        border-radius: 10px;
+        box-sizing: content-box;
+      }
+
+      div fieldset {
+        text-align: center;
+        margin: auto;
+      }
+      fieldset legend {
+        color: indigo;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Using CSS to style an HTML Form</h3>
+    <div>
+      <fieldset>
+        <legend>My datas:</legend>
+        <form action="/action_page.php">
+          <label for="fname">Enter your name:</label><br /><br />
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name is..."
+          /><br /><br />
+          <label for="lname">Enter your surname:</label><br /><br />
+          <input
+            type="text"
+            name="lastname"
+            id="lname"
+            placeholder="Your lastname is..."
+          /><br /><br />
+          <label for="country">Your country:</label>
+          <select id="country" name="country">
+            <option value="#0" selected>--Select one--</option>
+
+            <option value="#1">Australia</option>
+            <option value="#2">Canada</option>
+            <option value="#1">USA</option></select
+          ><br /><br />
+          <input type="submit" name="submit" placeholder="Submit" />
+        </form>
+      </fieldset>
+    </div>
+  </body>
+</html>
